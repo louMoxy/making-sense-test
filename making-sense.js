@@ -10,7 +10,7 @@ function numberLogLoop(startNum = 1, endNum = 100) {
       returnString += numberMapping[3];
     }
     if (!(currentNum % 5)) {
-      returnString += numberMapping[5];
+      returnString += returnString.length > 0 ? ` ${numberMapping[5]}` : numberMapping[5];
     }
     console.log(returnString || currentNum);
   }
